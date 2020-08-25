@@ -1,0 +1,217 @@
+body{
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}
+.title, .titleHome{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+.titleHome{
+    margin: 0 auto;
+    margin-top: 165px;
+}
+.titleLogo{
+    width: 100px;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: -50px;
+}
+p, .subtitle, .aboutParagraph{
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.subtitle{
+    margin-top: -25px;
+    margin-left: 100px;
+}
+.aboutParagraph{
+    text-align: left;
+    margin-left: 15px;
+    font-size: 18px;
+}
+h2{
+    text-align: center;
+    color: whitesmoke;
+}
+
+ul{
+    list-style-type: none;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+    
+}
+
+.logo{
+    float: left;
+    scale: 50%;
+    height: 0px;
+    margin-left: -35px;
+}
+.logo_title{
+    float: left;
+    margin-top: 12px;
+    margin-left: 65px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    padding: 14px 16px;
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: black;  
+}
+a:hover{
+    background-color: whitesmoke;
+}
+
+canvas{
+    display:block;
+}
+#createCustom, #randomFind, #reset, #doneVertices, #doneEdges, #resetCustom, #cardButton{
+    position: absolute;
+    z-index: 5;
+    padding: 0.5% 0.5%;
+    border-radius: 1px;
+    width: 150px;
+    height: 35px;
+    border: thin;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    color: black;
+    transition: all 0.2s;
+    margin-top: 800px;
+}
+#createCustom:hover, #randomFind:hover, #reset:hover, #cardButton:hover{
+    background-color: dimgray;
+    color: white;
+    outline: solid;
+    outline-offset: 1px;
+}
+#createCustom:active, #randomFind:active, #reset:active, #doneVertices:active, #doneEdges:active, #resetCustom:active{
+    top: 1px;
+}
+.custom, .reveal, .reset, .doneVertices, .resetCustom{
+    text-align: center;
+}
+.custom{
+    margin-right: 500px;
+}
+.reveal{
+    margin-right: 100px;
+}
+.reset{
+    margin-left: 300px;
+}
+.doneVertices{ 
+    margin-left: 100px;
+}
+.resetCustom{ 
+    margin-right: 300px;   
+}
+#drawArea{
+    position: fixed;
+    width: 650px;
+    height: 400px;
+    border-radius: 10px;
+    border-width: 10px;
+    border-style: dotted;
+    border-color:rgb(65, 65, 65);
+    margin-top: 225px;
+    visibility: hidden;
+}
+.drawContainer{
+    width: 650px;
+    margin: 0 auto;
+}
+.doneEdges{ 
+    text-align: center;
+    margin-left: 100px;
+    
+}
+#doneEdges, #resetCustom, #doneVertices{
+    color: white;
+    background-color: transparent;
+    outline: solid;
+    outline-color:white;
+    margin-top: 685px;
+    visibility: hidden;
+}
+#doneVertices:hover, #doneEdges:hover{
+    background-color: green;
+}
+#resetCustom:hover{
+    background-color: red;
+}
+.cardMax, .cardMore, .cardAbout{
+    position: absolute;
+    z-index: 5;
+    width: 1000px;
+    height: 250px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    background-color: rgba(105, 105, 105, 0.205);
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 300px;
+}
+.cardMore{
+    margin-top: 600px;
+}
+.cardAbout{
+    height: 300px;
+}
+.cardPrim, .cardBFS, .cardDFS, .cardFFA{
+    position: absolute;
+    padding-top: 15px;
+    z-index: 10;
+    width: 245px;
+    height: 155px;
+    margin-top: 5px;
+    border-style: double;
+    border-color: white;
+    background-color:rgba(0, 0, 0, 0.205);
+}
+.cardPrim:hover, .cardBFS:hover, .cardDFS:hover, .cardFFA:hover{
+    background-color: rgba(105, 105, 105, 0.205);
+}
+.cardBFS{
+    left: 25%;
+}
+.cardDFS{
+    left: 50%;
+}
+.cardFFA{
+    left: 75%;
+}
+#cardButton{
+    margin-top: 100px;
+    left: 50%;
+    margin-left: -75px;
+}
